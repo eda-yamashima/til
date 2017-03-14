@@ -1,7 +1,14 @@
-tar で解凍
+### tar 
+解凍
 
 | type     | extension        | command             |
 |:---------|:-----------------|:--------------------|
 | tar      | ~.tar            | `tar xvf filename`  |
 | tar + gz | ~.tgz , ~.tar.gz | `tar zxvf filename` |
 | tar + xz | ~.tar.xz         | `tar Jxvf filename` |
+
+## xargs
+文字列の一覧を受け取って次の任意のコマンドの引数にあてる
+
+ex)カレントディレクトリ以下のテキストファイルを一括で削除する  
+`find . -name "*.txt" | xargs rm`
