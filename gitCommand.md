@@ -12,3 +12,24 @@ ex)     git blame menu.cpp
 そう思うときは少なからずあるはず。
 
 そんな時はgit blameで最終編集者を見てその人に聞けば良い。
+
+## git branch  
+ブランチの一覧を見る　　
+
+- `git branch`
+
+リモートブランチも含めて見る　　
+
+- `git branch -a`
+
+ブランチを作成する　　
+
+- `git branch <branchname>`
+
+ブランチを削除する　　　
+
+- `git branch -d <branchname>`
+
+文字列にマッチしたブランチを一括で削除する　　
+
+- `git branch | grep <string> | xargs git branch -d`
