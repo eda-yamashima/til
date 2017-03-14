@@ -1,17 +1,17 @@
 # gitの便利なコマンド
 コマンド一覧
+- git checkout
+- git banch
 - git blame
 
-## git blame
-syntax) git blame <filename>  
-ex)     git blame menu.cpp
+## git checkout 
+ブランチを切り替える
 
-ファイルの最終編集履歴を見れる。  
-これ、前と変わってるけど誰が編集したんだろう？
-このコードはどういう意図で実装したのだろうか？  
-そう思うときは少なからずあるはず。
+- git checkout <branchname>
 
-そんな時はgit blameで最終編集者を見てその人に聞けば良い。
+リモートブランチをローカルに持ってきてブランチ切り替え
+
+- git checkout -b <localbranch> <remotebranch>
 
 ## git branch  
 ブランチの一覧を見る　　
@@ -33,3 +33,15 @@ ex)     git blame menu.cpp
 文字列にマッチしたブランチを一括で削除する　　
 
 - `git branch | grep <string> | xargs git branch -d`
+
+## git blame
+syntax) git blame <filename>  
+ex)     git blame menu.cpp
+
+ファイルの最終編集履歴を見れる。  
+これ、前と変わってるけど誰が編集したんだろう？
+このコードはどういう意図で実装したのだろうか？  
+そう思うときは少なからずあるはず。
+
+そんな時はgit blameで最終編集者を見てその人に聞けば良い。
+
