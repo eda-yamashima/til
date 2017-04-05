@@ -3,6 +3,7 @@
 - git checkout
 - git banch
 - git blame
+- git push
 
 ## git checkout 
 ブランチを切り替える
@@ -44,4 +45,8 @@ ex)     git blame menu.cpp
 そう思うときは少なからずあるはず。
 
 そんな時はgit blameで最終編集者を見てその人に聞けば良い。
+
+## git push
+リモートブランチを削除する
+- `git push --delete origin branch_name`
 
