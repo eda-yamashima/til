@@ -50,3 +50,7 @@ ex)     git blame menu.cpp
 リモートブランチを削除する
 - `git push --delete origin branch_name`
 
+## git log
+コマンドオプション
+* '- p {commitID}'
+  コミットのdiffを表示する
