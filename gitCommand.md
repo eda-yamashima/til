@@ -1,9 +1,14 @@
 # gitの便利なコマンド
 コマンド一覧
+- git commit
 - git checkout
 - git banch
 - git blame
 - git push
+
+## git commit 
+コミットをする。
+- `git commit -m "こみっとめっせーじ"`
 
 ## git checkout 
 ブランチを切り替える
