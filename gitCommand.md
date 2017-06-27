@@ -62,5 +62,5 @@ ex)     git blame menu.cpp
   コミットのdiffを表示する
   
 ## git pull 
-ブランチ名を指定してpullする
+ブランチ名を指定してpullする  
 `$ git pull origin pullしたいリモートブランチ名:ローカルブランチ名`
