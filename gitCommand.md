@@ -5,6 +5,7 @@
 - git banch
 - git blame
 - git push
+- git pull
 
 ## git commit 
 コミットをする。
@@ -59,3 +60,7 @@ ex)     git blame menu.cpp
 コマンドオプション
 * '- p {commitID}'
   コミットのdiffを表示する
+  
+## git pull 
+ブランチ名を指定してpullする
+`$ git pull origin pullしたいリモートブランチ名:ローカルブランチ名`
