@@ -20,6 +20,13 @@
 
 - git checkout -b <localbranch> <remotebranch>
 
+行った変更をリセットする　
+
+- git checkout <filename>
+
+全てリセットする場合
+- git checkout .
+
 ## git branch  
 ブランチの一覧を見る　　
 
