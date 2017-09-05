@@ -6,6 +6,8 @@ export SAVEHIST=1000000
 # コマンド履歴を保存するファイルを指定する
 export HISTFILE=~/.zhistory
 
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
 alias l='ls -G'
 alias ll='ls -lFG'
 alias lll='ls -lFaG'
