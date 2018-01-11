@@ -1,3 +1,6 @@
+###  import a OpenVPN config file from command line with NetworkManager
+`sudo nmcli connection import type openvpn file /path/to/your.ovpn`
+
 ### tar 
 解凍
 
