@@ -1,10 +1,10 @@
 after install setting
-## Ubuntu
+# Ubuntu
 enviroment
     - Dell XPS 13 (9343)
     - Ubuntu 17.10.1
 
-### enable WiFi
+## enable WiFi
 dell xps 13 DW1560(BCM4352)
 
 ```
@@ -13,4 +13,14 @@ dell xps 13 DW1560(BCM4352)
 
 # modprobe wl
 # reboot
+```
+
+## install google-chrome with apt
+https://www.ubuntuupdates.org/ppa/google_chrome
+
+```
+$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+$ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+$ sudo apt update
+$ sudo apt install google-chrome-stable
 ```
