@@ -15,6 +15,14 @@ dell xps 13 DW1560(BCM4352)
 # reboot
 ```
 
+## show another Display Scales
+```
+$ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+$ sudo reboot
+```
+
+
+
 ## install google-chrome with apt
 https://www.ubuntuupdates.org/ppa/google_chrome
 
