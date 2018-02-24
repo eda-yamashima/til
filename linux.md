@@ -37,3 +37,29 @@ $ sudo apt install google-chrome-stable
 
 - Linuxbrew Binary
 https://github.com/athrunsun/homebrew-linuxbinary
+
+
+## Docker
+installation  
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+### add group user to docker
+check a group already exists docker
+```
+$ cat /etc/group | grep docker
+docker:x:999:
+```
+
+if not found group , you make a docker group
+```
+sudo groupadd docker
+```
+
+add user(rom) in group. and check group
+```
+$ sudo gpasswd -a rom docker
+Adding user rom to group docker
+
+$ cat /etc/group | grep docker
+docker:x:999:rom
+```
