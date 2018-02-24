@@ -63,3 +63,9 @@ Adding user rom to group docker
 $ cat /etc/group | grep docker
 docker:x:999:rom
 ```
+
+## firewall
+```
+$ sudo apt install firewalld
+$ sudo firewall-cmd --list-all
+```
