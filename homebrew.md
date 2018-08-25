@@ -1,3 +1,12 @@
+# macOS
+- python
+- zsh
+- cask
+  - google-chrome
+
+
+# Linux
+
 install list
 - Atom
 - Vim
