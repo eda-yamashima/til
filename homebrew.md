@@ -1,6 +1,7 @@
 # macOS
 - python
 - zsh
+- wget
 - cask
   - google-chrome
 
