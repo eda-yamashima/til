@@ -1,7 +1,7 @@
-###  import a OpenVPN config file from command line with NetworkManager
+##  import a OpenVPN config file from command line with NetworkManager
 `sudo nmcli connection import type openvpn file /path/to/your.ovpn`
 
-### tar 
+## tar 
 解凍
 
 | type     | extension        | command             |
@@ -15,3 +15,17 @@
 
 ex)カレントディレクトリ以下のテキストファイルを一括で削除する  
 `find . -name "*.txt" | xargs rm`
+
+## symblic link 
+- create
+syntax: `ln -s <destination> <from>`
+もし同じ名前でカレントディレクトリにあるなら後ろを省略可
+```
+hoge$ ln -s /hoge/fuga/piyo ./piyo
+hoge$ ln -s /hoge/fuga/piyo
+```
+
+- delete
+```
+unlink /hoge/fuga/piyo
+```
