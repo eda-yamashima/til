@@ -18,7 +18,7 @@ ex)カレントディレクトリ以下のテキストファイルを一括で�
 
 ## symblic link 
 - create
-syntax: `ln -s <destination> <from>`
+syntax: `ln -s <destination> <from>`  
 もし同じ名前でカレントディレクトリにあるなら後ろを省略可
 ```
 hoge$ ln -s /hoge/fuga/piyo ./piyo
