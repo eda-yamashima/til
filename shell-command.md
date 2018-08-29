@@ -1,3 +1,9 @@
+## ssh
+pemファイルは400にしておく
+```
+ssh -i test.pem user@10.8.172.123
+```
+
 ##  import a OpenVPN config file from command line with NetworkManager
 `sudo nmcli connection import type openvpn file /path/to/your.ovpn`
 
