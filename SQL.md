@@ -24,3 +24,6 @@ CASE WHEN sex = '1' THEN '男'
      WHEN sex = '2' THEN '女'
 ELSE 'その他' END 
 ```
+
+## key
+各テーブルに設定されている外部キー制約の内、重複不可な外部制約キーをPRIMARY KEY、重複可能な外部制約キーをMULTIPLE KEYと呼ぶ。
