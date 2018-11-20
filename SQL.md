@@ -1,8 +1,9 @@
-# User
+## ランダムに取得する
+ORDER BY RAND() を使う
+```
+SELECT * FROM `sandbox` ORDER BY RAND() LIMIT 1;
+```
 
-# DATABASE
-
-# Table
 ## カラムを確認する
 `SHOW COLUMNS` 文
  - `SHOW COLUMNS FROM table_name`
