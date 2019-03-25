@@ -1,4 +1,5 @@
-export PATH=~/.nodebrew/current/bin:/Users/kosuke.yamashima/.nodebrew/current/bin:/Users/kosuke.yamashima/.nodebrew/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export EDITOR=vim
@@ -7,13 +8,18 @@ export SAVEHIST=1000000
 export HISTFILE=~/.zhistory
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
-alias l='ls -G'
-alias ll='ls -lFG'
+
+alias ll='ls -lhFG'
 alias lll='ls -lFaG'
 alias ipcheck='ifconfig -a | grep inet | grep 10.0.'
 alias branch='git branch | grep \*'
 alias web='webstorm'
+alias rm='rmtrash'
+alias pip='pip3'
+alias update='brew update && brew upgrade && brew cask upgrade'
 
 function openpr() {
   local current_branch_name=$(git symbolic-ref --short HEAD | xargs perl -MURI::Escape -e 'print uri_escape($ARGV[0]);')
@@ -98,3 +104,10 @@ bindkey -v '^?' backward-delete-char
 
 # Shift-Tabで候補を逆順に補完する
 bindkey '^[[Z' reverse-menu-complete
+
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
+export PATH="/usr/local/opt/php@7.1/bin:$PATH"
+export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
+
