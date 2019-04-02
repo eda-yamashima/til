@@ -107,7 +107,22 @@ bindkey '^[[Z' reverse-menu-complete
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 bindkey '\e[3~' delete-char
-bindkey '^R' history-incremental-search-backward
 export PATH="/usr/local/opt/php@7.1/bin:$PATH"
 export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
 
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
