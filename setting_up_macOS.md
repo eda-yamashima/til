@@ -4,8 +4,14 @@ iMacを例に設定していく。
 
 ## 設定
 ### touchpad
-- [x] tap to click
+-   [x] tap to click
 
 ### Dock
 Position on screen: Left
-- [x] Automatiacally hide and how the Dock
+-   [x] Automatiacally hide and how the Dock
+
+### Sound
+-   [x] Show volume in menu bar
+
+## homebrew
+see homebrew.md
