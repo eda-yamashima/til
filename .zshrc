@@ -12,7 +12,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-
+alias l='ls -FG'
 alias ll='ls -lhFG'
 alias lll='ls -lFaG'
 alias ipcheck='ifconfig -a | grep inet | grep 10.0.'

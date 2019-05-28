@@ -15,3 +15,9 @@ Position on screen: Left
 
 ## homebrew
 see homebrew.md
+
+### Language
+- Cica font instal
+- Add input source
+
+git config --global --edit

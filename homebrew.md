@@ -16,7 +16,8 @@ ln -s ~/Repo/til/.zshrc
 PATH="$HOME/homebrew/bin:$PATH"
 
 ```
-brew cask install google-chrome
+brew install docker
+brew cask install google-chrome docker clipy franz phpstorm
 ```
 
 
