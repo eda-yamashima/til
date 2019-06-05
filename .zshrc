@@ -1,7 +1,6 @@
-export PATH=$HOME/.rbenv/bin:$PATH
+PATH="$HOME/.homebrew/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-PATH="$HOME/.homebrew/bin:$PATH"
 
 export EDITOR=vim
 export SAVEHIST=1000000
