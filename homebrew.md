@@ -20,16 +20,8 @@ brew install docker rmtrash
 brew cask install google-chrome docker clipy franz phpstorm
 ```
 
-
-- python
-- zsh
-- wget
-- cask
-  - google-chrome
-
-
-
 # Linux
+Using Linuxbrew
 
 install list
 - Atom
