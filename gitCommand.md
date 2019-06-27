@@ -30,6 +30,10 @@
 全てリセットする場合
 - git checkout .
 
+コンフリクトを解消
+- `git checkout --ours <filename>`
+- `git checkout --theirs <filename>`
+
 ## git branch  
 ブランチの一覧を見る　　
 
