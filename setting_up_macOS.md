@@ -18,8 +18,13 @@ Keyboard > Input Source
 - Add input source
 - [ ] Live Conversion  
 
-git config --global --edit
+Keyboard > Shortcuts > Input Sources
+- [x] Select the previous input source
+- [x] Select next source in input menu
 
 ## Application 
 ### homebrew
 see homebrew.md
+
+### Git
+git config --global --edit
