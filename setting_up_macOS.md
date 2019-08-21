@@ -2,22 +2,24 @@
 iMacを例に設定していく。
 だいたい一緒になるはず
 
-## 設定
+## System Preferences
 ### touchpad
--   [x] tap to click
+- [x] tap to click
 
 ### Dock
 Position on screen: Left
--   [x] Automatiacally hide and how the Dock
+- [x] Automatiacally hide and how the Dock
 
 ### Sound
--   [x] Show volume in menu bar
-
-## homebrew
-see homebrew.md
+- [x] Show volume in menu bar
 
 ### Language
-- Cica font instal
+Keyboard > Input Source
 - Add input source
+- [ ] Live Conversion  
 
 git config --global --edit
+
+## Application 
+### homebrew
+see homebrew.md
