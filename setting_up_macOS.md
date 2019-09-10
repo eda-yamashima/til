@@ -1,4 +1,5 @@
-# macOSでのPCセットアップ
+
+which zsh | xargs chsh -s  # macOSでのPCセットアップ
 iMacを例に設定していく。
 だいたい一緒になるはず
 
@@ -25,6 +26,13 @@ Keyboard > Shortcuts > Input Sources
 ## Application 
 ### homebrew
 see homebrew.md
+
+### shell
+after zsh install
+```
+which zsh | sudo tee -a /etc/shells
+which zsh | xargs chsh -s  
+```
 
 ### Git
 git config --global --edit
