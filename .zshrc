@@ -11,6 +11,10 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESS="-MR"
+export MORE="-MR"
+
 alias l='ls -FG'
 alias ll='ls -lhFG'
 alias lll='ls -lFaG'
@@ -110,19 +114,9 @@ bindkey '\e[3~' delete-char
 export PATH="/usr/local/opt/php@7.1/bin:$PATH"
 export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
 
-function peco-select-history() {
-    local tac
-    if which tac > /dev/null; then
-        tac="tac"
-    else
-        tac="tail -r"
-    fi
-    BUFFER=$(\history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
-    CURSOR=$#BUFFER
-    zle clear-screen
+function select-history() {
+	BUFFER=$(cat ~/.zhistory| awk -F '[;]' '{print $2}' | fzf --no-sort +m --query "$LBUFFER" --prompt="History > ")
+	CURSOR=$#BUFFER
 }
-
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
+zle -N select-history
+bindkey '^r' select-history
