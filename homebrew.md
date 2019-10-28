@@ -15,9 +15,9 @@ ln -s ~/Repo/til/.zshrc
 - in .bashrc or .zshrc
 PATH="$HOME/homebrew/bin:$PATH"
 
+brew bundle from Brewfile
 ```
-brew install docker rmtrash
-brew cask install google-chrome docker clipy franz phpstorm
+brew bundle
 ```
 
 # Linux
