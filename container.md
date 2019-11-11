@@ -3,15 +3,18 @@
 - exec  
 run command in container
 ```
-docker exec -it nginx_container /bin/bash
-docker exec -it php_container /app/hoge.sh
+docker exec -it CONTAINER /bin/bash
+docker exec -it CONTAINER /app/hoge.sh
 ```
 
 - logs  
 show logs (stdout and stderr)
 ```
-docker logs -f nginx_container
+docker logs -f CONTAINER
 ```
+
+- restart policy
+```docker update --restart=POLICY CONTAINER```
 
 ## Service
 [Portainer](https://www.portainer.io/)  
